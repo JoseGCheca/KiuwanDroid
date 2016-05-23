@@ -1,0 +1,38 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.jgcheca.kiuwan_droid.MainActivity" >
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/navigation_item_1"
+            android:numericShortcut="0"
+            android:icon="@android:drawable/ic_dialog_info"
+            android:title="@string/nav_title_appList"/>
+        <item
+            android:id="@+id/navigation_item_2"
+            android:numericShortcut="1"
+            android:icon="@android:drawable/ic_dialog_info"
+            android:title="Global"/>
+
+        <item
+            android:id="@+id/navigation_item_3"
+            android:icon="@android:drawable/ic_dialog_info"
+            android:numericShortcut="2"
+            android:title="Portfolios"/>
+    </group>
+
+    <item android:title="Sub items">
+        <menu>
+            <item
+                android:numericShortcut="3"
+                android:icon="@android:drawable/ic_menu_preferences"
+                android:title="Settings" />
+            <item
+                android:numericShortcut="4"
+                android:icon="@android:drawable/ic_dialog_info"
+                android:title="Sub item 2" />
+        </menu>
+    </item>
+
+</menu>
